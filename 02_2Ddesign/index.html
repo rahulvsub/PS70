@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>PS70: Intro to Digital Fabrication </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">
+
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div style="align-items: left; justify-content:left;" class="container-fluid">
+    <h3 class="nav-title"> PS70: Intro to Digital Fabrication</h3>
+    <div class="navbar-nav">
+      <h4></h4>
+      <h4><a class="nav-link" href="../index.html">Home</a></h4>
+      <h4><a class="nav-link" href="../about.html">About</a></h4>
+      <h4><a class="nav-link" href="../finalproject.html">Final Project</a></h4>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+
+<xmp style="display:none;">
+<br> 
+
+### 2D Design
+
+This week comprised an introduction to CAD software through 2D design, with an eye to fabricating these designs through laser and vinyl cutting. While I've tinkered with a few different CAD programs in the past, including Autodesk Inventor and Tinkercad, I've always learned them in a somewhat ad hoc manner and have never been completely satisfied with any program thus far. I was therefore excited to have an opportunity to learn Fusion 360, which I had heard from others to be a highly approachable yet capable 2D/3D CAD program. After the class lectures, I started to design my press-fit construction kit in Fusion 360 during the lab period. I wanted to choose a shape that could tesselate since I felt this would create more interesting and neat structures, so I decided to make my kit pieces hexagon-shaped. I created a table of parameters first to make the design as modifiable as possible, with parameters for the side length of a hexagon and the width/depth of a slot for the pieces to interlock with each other. I also included a kerf parameter to account for the material removed during cutting, knowing full well that I'd likely have to change it (and maybe several times). I then created parameters for actual physical dimensions that account for kerf, which I used to dimension the hexagon design and slots.
+
+![hexagon design image](./Screenshot2022-09-13124637.png)
+![parameters](./Screenshot2022-09-13124542.png)
+
+A first trip to the laser cutter showed that the design works, but the kerf is a little larger than anticipated, likely because I had to make two passes with the laser on each shape to ensure it was fully cut:
+
+![first cut](./20220909_173715.jpg)
+
+Increasing the kerf parameter from 0.5mm to 1mm got rid of the extra space, and now the pieces fit together nicely:
+
+![second cut](./20220909_174536.jpg)
+
+It occurred to me that two pieces interlocked with each other resembled a snowflake, so I decided to print pieces of varying sizes to make a large snowflake that I could use as a winter-themed decoration in my room. By changing the side_length parameter, I was able to rapidly create designs with side lengths of 20mm, 40mm and 60mm, and cut them all at once. Here's an image of a snowflake in progress, with the largest (60mm) piece in the middle, 6x medium (40mm) pieces attached around it, and 6x smallest (20mm) pieces on the left waiting to be attached:
+
+![snowflake](./20220909_184146.jpg)
+
+I also considered cutting white vinyl covers to stick on each piece so it looks more like a (white) snowflake, but decided against this since it would require a large amount of vinyl to cover all the pieces (12 faces for the small pieces, 12 faces for the medium pieces and 2 faces for the large piece).
+
+### 3D Design Tutorials
+
+In order to get more familiar with Fusion 360, I completed some of Autodesk's provided online tutorials (found [here](https://help.autodesk.com/view/fusion360/ENU/courses/#fusion-360-fundamentals "Fusion 360 Tutorials")) for important features and operations in Fusion 360. First, I watched a series of videos about making and constraining sketches so that they are fully defined and constrained, and made this profile of a GoPro camera:
+
+![GoPro](./Screenshot2022-09-12015555.png)
+
+I then watched some videos about how to extrude sketches into 3D objects. I was particularly surprised by the power and range of capabilities of the Extrude tool, especially how it could make thin walls and cutouts in 3D objects. I made this wheel with axle cutout using only a sketch and the Extrude tool:
+
+![wheel](./Screenshot2022-09-13023951.png)
+
+The best way to get better at CAD is of course to practice it, so I modeled a couple basic objects by measuring them with calipers and modeling them as best I could in Fusion 360.
+
+I made a pencil:
+
+![pencil](./Screenshot2022-09-13143314.png)
+
+and a pencil cup:
+
+![pencil cup](./Screenshot2022-09-13145542.png)
+
+and imported a table from online:
+
+![table](./Screenshot2022-09-13145704.png)
+
+</xmp>
+</body>
+
+<script src="../strapdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+
+</html>
